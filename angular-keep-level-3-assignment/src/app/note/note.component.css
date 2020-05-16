@@ -1,0 +1,30 @@
+.mat-card {
+    margin: 2%;
+    border-radius: 2%;
+    background-color:#c9ccf9;
+    font-family: 'Blinker', sans-serif;
+    height: 3%;
+    padding-top: 1%;
+ }
+ .mat-card-title {
+    font-size: medium;
+  }
+ .cls
+{
+	color: #343a40 !important;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    align-content: right;
+    float: right;
+    font-family: 'Blinker', sans-serif;
+    font-weight: bold;
+    margin:0%;
+}
+.cls:hover
+{
+	color: white !important;
+    background-color: #343a40 !important;
+	cursor: grab;
+	font-weight: bold;
+}

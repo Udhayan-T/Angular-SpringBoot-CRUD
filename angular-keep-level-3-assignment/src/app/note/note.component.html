@@ -1,0 +1,8 @@
+<mat-card>
+    <mat-card-title>{{note.noteTitle}}</mat-card-title>
+    <mat-card-content><p>{{note.noteContent}}</p></mat-card-content>
+    <mat-card-content><p>{{note.noteStatus}}</p></mat-card-content>
+    <mat-card-content><p>{{note.noteReminders}}</p></mat-card-content>
+    <button mat-raised-button (click)='openEditView(note.noteId)'>Edit</button>
+    <button mat-raised-button (click)='deleteNote(note.noteId)'>Delete</button>
+</mat-card>

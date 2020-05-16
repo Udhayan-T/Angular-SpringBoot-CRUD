@@ -1,0 +1,12 @@
+.keep-c-list-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 2em;
+}
+
+.keep-c-list-container label {
+    color: #e21b1b;
+    font-weight: bold;
+    margin-top: 0%;
+}

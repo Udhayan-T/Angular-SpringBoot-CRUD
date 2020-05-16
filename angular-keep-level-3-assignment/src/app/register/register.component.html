@@ -1,0 +1,34 @@
+
+<!-- Label to display any error messages -->
+<!-- <label class="error-message">{{ errMessage }}</label> -->
+
+<!-- To add notes -->
+<div class="NotePanel">
+  <mat-accordion>
+      <mat-expansion-panel  class="NoteHead">
+          <mat-expansion-panel-header>
+              <mat-panel-title class="NoteTitle">
+                  Register User
+              </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <div class="NoteForm">
+              <mat-form-field>
+                  <input matInput placeholder="Enter UserId" name="title" [(ngModel)]="user.userId">
+              </mat-form-field>
+              <mat-form-field>
+                  <textarea matInput placeholder="Enter Password" name="text" [(ngModel)]="user.userPassword"></textarea>
+              </mat-form-field>
+              <!-- <mat-form-field>
+                <textarea matInput placeholder="Enter FirstName" name="text" [(ngModel)]="user.firstName"></textarea>
+            </mat-form-field>
+            <mat-form-field>
+              <textarea matInput placeholder="Enter LastName" name="text" [(ngModel)]="user.lastName"></textarea>
+          </mat-form-field>             -->
+              <button mat-raised-button class="registerButton" (click)="registerUser()">Register</button>
+          </div>
+
+      </mat-expansion-panel>
+  </mat-accordion>
+</div>
+

@@ -1,0 +1,44 @@
+<!-- Label to display any error messages -->
+<!-- <label class="error-message">{{ errMessage }}</label> -->
+
+<!-- To add notes -->
+<div class="NotePanel">
+    <mat-accordion>
+        <mat-expansion-panel  class="NoteHead">
+            <mat-expansion-panel-header>
+                <mat-panel-title class="NoteTitle">
+                    Take a note
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <div class="NoteForm">
+                <mat-form-field>
+                    <input matInput placeholder="Enter title" name="title" [(ngModel)]="note.noteTitle">
+                </mat-form-field>
+                <mat-form-field>
+                    <textarea matInput placeholder="Enter Text" name="text" [(ngModel)]="note.noteContent"></textarea>
+                </mat-form-field>
+                <!-- <app-category></app-category>    -->
+                <mat-form-field>
+                    <mat-label>Categories</mat-label>
+                    <mat-select matInput placeholder="Enter Category" name="category" [(ngModel)]="note.noteStatus">
+                      <mat-option value = "Not-Started">Not-Started</mat-option>
+                      <mat-option value = "Started">Started</mat-option>
+                      <mat-option value = "Completed">Completed</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <!-- <app-reminder></app-reminder> -->
+                <mat-form-field>
+                    <mat-label>Reminders</mat-label>
+                    <mat-select multiple placeholder="Enter Reminder" name="reminder" [(ngModel)]="note.noteReminders">
+                      <mat-option value = "1am">1am</mat-option>
+                      <mat-option value = "4am">4am</mat-option>
+                      <mat-option value = "7am">7pm</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                <button mat-raised-button class="NoteButton" (click)="takeNotes()">Done</button>
+            </div>
+
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>

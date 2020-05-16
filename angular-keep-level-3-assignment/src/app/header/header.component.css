@@ -1,0 +1,13 @@
+.keep-c-toggle-view {
+	width: 100%;
+	margin-left: 93%;
+	cursor: pointer;
+}
+.header
+{
+    color: whitesmoke;
+    font-family: 'Blinker', sans-serif;
+    font-weight: bold;
+    background-color: black;
+}
+

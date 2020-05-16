@@ -1,0 +1,39 @@
+.NoteCards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.mat-card {
+    margin: 2%;
+    border-radius: 2%;
+    background-color:#e9ecef;
+    font-family: 'Blinker', sans-serif;
+ }
+
+ .mat-card-header {
+   /* background-color:#343a40;
+    color:#e9ecef; */
+    display: flex;
+    flex-direction: row;
+    
+ }
+ .cls
+{
+	color: #343a40 !important;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    align-content: right;
+    float: right;
+    font-family: 'Blinker', sans-serif;
+    font-weight: bold;
+}
+.cls:hover
+{
+	color: white !important;
+    background-color: #343a40 !important;
+	cursor: grab;
+	font-weight: bold;
+}

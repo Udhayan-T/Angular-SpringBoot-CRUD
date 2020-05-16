@@ -1,0 +1,12 @@
+spring:
+ data:
+   mongodb:
+#     authentication-database:
+     username: root
+     password: root
+     database: noteDb
+     uri: mongodb://localhost:27017
+     #port: 27017
+     #host: localhost
+server:
+ port: 8082

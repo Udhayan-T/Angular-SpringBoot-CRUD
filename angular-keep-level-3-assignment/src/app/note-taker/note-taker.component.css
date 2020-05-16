@@ -1,0 +1,32 @@
+.NotePanel
+{
+    align-self: center;
+    margin:5%;
+}
+.NoteHead
+{
+    border-radius: 1% ;
+    background-color:#e9ecef;
+    opacity: 0.8;
+}
+.NoteTitle
+{
+    font-weight: bolder;
+    font-family: 'Blinker', sans-serif;
+}
+.NoteForm
+{
+    display: flex;
+    flex-direction: column;
+}
+.NoteButton
+{
+    background-color: #343a40;
+    border-radius: 2% ;
+    color: #e9ecef;
+}
+.NoteButton:hover
+{
+    border-radius: 2% ;
+    font-weight: bold;
+}

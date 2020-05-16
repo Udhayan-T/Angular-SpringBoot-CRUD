@@ -1,0 +1,35 @@
+<!-- <label class="error-message">{{submitMessage}}</label> -->
+<div>
+    <button mat-raised-button class="registerButton" (click)="registerUser()">Register New User</button>
+</div>
+<strong *ngIf="submitMessage" class="error-message">{{submitMessage}}</strong>
+<div class="login-container">
+    <h2>Login Form</h2>
+
+    <div class="login-form">
+        <form class="login-form" [formGroup]="loginForm" (ngSubmit)="loginSubmit()" method="post">
+
+            <mat-form-field>
+                <input class="userId" matInput type="text" placeholder="Enter userId" formControlName="userId">
+
+                <mat-error *ngIf="loginForm.get('userId').dirty && 
+                loginForm.get('userId').hasError('required')">userId is required Field !!!</mat-error>
+
+                <!-- <mat-error *ngIf="loginForm.get('username').dirty &&  -->
+                <!-- loginForm.get('username').hasError('minlength')">UserName must be of 3 characters !!!</mat-error> -->
+            </mat-form-field>
+
+            <mat-form-field>
+                <input class="userPassword" matInput type="password" placeholder="Enter Password" formControlName="userPassword">
+
+                <mat-error *ngIf="loginForm.get('userPassword').dirty && 
+                loginForm.get('userPassword').hasError('required')">Password is required Field !!!</mat-error>
+
+                <mat-error *ngIf="loginForm.get('userPassword').dirty && 
+                loginForm.get('userPassword').hasError('minlength')">Password must be of 3 characters !!!</mat-error>
+            </mat-form-field>
+
+            <button mat-button class="submit_button">Submit</button>
+        </form>
+    </div>
+</div>

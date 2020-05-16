@@ -1,0 +1,21 @@
+mat-form-field {
+    width: 100%;
+}
+
+mat-form-field input {
+    width: 100%;
+}
+
+.dial {
+   opacity: 0.8;
+}
+.keep-c-done-wrapper button {
+    background:black;
+    color: whitesmoke;
+    align-self: center;
+    align-content: center;
+}
+.keep-c-done-wrapper button :hover {
+   font-weight: bolder;
+   font-family: 'Blinker', sans-serif;
+}
